@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "husky install"
+  },
   "license": "ISC",
   "devDependencies": {
     "husky": "6"

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "hi husky"
+
+exit 0
