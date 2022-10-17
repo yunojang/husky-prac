@@ -6,5 +6,8 @@
   "scripts": {
     "setup-hook": "sh ./setup_hooks.sh"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
 }
