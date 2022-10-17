@@ -1,0 +1,23 @@
+#!/bin/sh
+
+FORBIDDEN_HTTPS_URL="https://github.com/yunojang/husky-prac.git"
+FORBIDDEN_SSH_URL="git@github.com:yunojang/husky-prac.git"
+FORBIDDEN_REF="refs/heads/master" # insert branch ref
+
+echo "hello shell" 
+
+remote="$1"
+url="$2"
+
+if [$remote != FORBIDDEN_HTTPS_URL -a $remote != FORBIDDEN_SSH_URL]; then
+  exit 0
+fi
+
+if read local_ref local_sha remote_ref remote_sha
+then
+	if ["$remote_ref == $FORBIDDEN_REF"]
+  then
+    echo "DO NOT PUSH it [master]"
+    exit 1 # 금지된 ref로 push시 에러
+
+exit 0
