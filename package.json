@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup-hook": "sh ./setup_hooks.sh",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.1"
+    "husky": "^8.0.0"
   }
 }
