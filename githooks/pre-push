@@ -9,16 +9,13 @@ FORBIDDEN_REF="refs/heads/master" # insert branch ref
 remote="$1"
 url="$2"
 
-echo "$remote"
-if [ "$remote" != "$FORBIDDEN_HTTPS_URL" -a "$remote" != "$FORBIDDEN_SSH_URL" ]; then
-  echo "enter_address"
+if [ "$url" != "$FORBIDDEN_HTTPS_URL" -a "$url" != "$FORBIDDEN_SSH_URL" ]; then
   exit 0
 fi
 
 
 if read local_ref local_sha remote_ref remote_sha
 then 
-  echo "$remote_ref"
   if [ "$remote_ref" == "$FORBIDDEN_REF" ]
   then 
     echo "DO NOT PUSH it master"
@@ -26,5 +23,4 @@ then
   fi
 fi
 
-echo "enter_ref"
 exit 0

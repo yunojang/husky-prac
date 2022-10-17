@@ -1,0 +1,22 @@
+{
+  "name": "githooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "yarn hook_setup",
+    "hook_setup": "sh ./setup_hooks.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunojang/husky-prac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunojang/husky-prac/issues"
+  },
+  "homepage": "https://github.com/yunojang/husky-prac#readme"
+}
