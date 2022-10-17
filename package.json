@@ -6,6 +6,6 @@
   "scripts": {},
   "license": "ISC",
   "devDependencies": {
-    "husky": "4"
+    "husky": "6"
   }
 }
