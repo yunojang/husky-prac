@@ -1,0 +1,10 @@
+{
+  "name": "githooks",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup-hook": "sh ./setup_hooks.sh"
+  },
+  "license": "ISC"
+}
