@@ -7,5 +7,10 @@
   "license": "ISC",
   "devDependencies": {
     "husky": "6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'pre-commit'"
+    }
   }
 }

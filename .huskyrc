@@ -1,6 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": "echo 'asjdoidasjiodasj'",
-    "pre-push": "echo 'push push baby'"
-  }
-}
