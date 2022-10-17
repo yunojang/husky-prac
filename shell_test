@@ -9,8 +9,8 @@ FORBIDDEN_REF="refs/heads/master" # insert branch ref
 remote="$1"
 url="$2"
 
-echo "$remote"
-if [ "$remote" != "$FORBIDDEN_HTTPS_URL" -a "$remote" != "$FORBIDDEN_SSH_URL" ]; then
+echo "$url"
+if [ "$url" != "$FORBIDDEN_HTTPS_URL" -a "$url" != "$FORBIDDEN_SSH_URL" ]; then
   echo "enter_address"
   exit 0
 fi
