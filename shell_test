@@ -10,10 +10,10 @@ remote="$1"
 url="$2"
 
 if [ "$remote" != "$FORBIDDEN_HTTPS_URL" -a "$remote" != "$FORBIDDEN_SSH_URL" ]; then
+  echo "enter_address"
   exit 0
 fi
 
-echo "enter_address"
 
 if read local_ref local_sha remote_ref remote_sha
 then 
