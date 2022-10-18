@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "yarn hook_setup",
-    "hook_setup": "sh ./setup_hooks.sh"
+    "hook_setup": "sh ./setup_hooks.sh",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/yunojang/husky-prac/issues"
   },
-  "homepage": "https://github.com/yunojang/husky-prac#readme"
+  "homepage": "https://github.com/yunojang/husky-prac#readme",
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
 }
